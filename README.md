@@ -47,3 +47,6 @@ var modals = document.querySelectorAll('.js-modal');
 	new Modal(modals[i]);
 });
 ```
+
+## Thanks
+I borrowed the principles/spirit/accessibility work from Principles from this https://github.com/gdkraus/accessible-modal-dialog
