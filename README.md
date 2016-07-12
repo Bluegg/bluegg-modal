@@ -1,6 +1,6 @@
 # Bluegg Modal
 
-A simple modal
+[A simple modal](http://codepen.io/matthewbeta/pen/yJPgWX)
 
 ## Usage
 
