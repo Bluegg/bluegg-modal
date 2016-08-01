@@ -31,7 +31,7 @@ HTML Markup
 NPM install
 ```shell
 # install
-npm install bluegg/bluegg-modal
+npm install bluegg-modal
 ```
 
 JS

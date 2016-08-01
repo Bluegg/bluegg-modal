@@ -2,6 +2,7 @@
   "name": "bluegg-modal",
   "version": "0.0.1",
   "description": "Simple modal",
+	"repository": "bluegg/bluegg-modal",
   "main": "./dist/index.js",
   "scripts": {
     "build": "node_modules/.bin/babel --plugins add-module-exports src/index.js > dist/index.js",
