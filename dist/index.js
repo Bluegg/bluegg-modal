@@ -66,6 +66,10 @@ var Modal = function () {
 				return _this._hideModal(_this.modal);
 			}, false);
 
+			OVERLAY.addEventListener('click', function () {
+				return _this._hideModal(_this.modal);
+			}, false);
+
 			if (this.cancelBtn !== undefined) {
 				this.cancelBtn.addEventListener('click', function () {
 					return _this._cancelBtnEnter(_this.modal, event);
@@ -155,6 +159,7 @@ var Modal = function () {
 	}, {
 		key: '_showModal',
 		value: function _showModal(modal, evt) {
+			var _this2 = this;
 
 			scrollPos = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -171,7 +176,9 @@ var Modal = function () {
 				// save current focus
 				lastFocus = document.activeElement;
 
-				this._setInitialFocus();
+				window.setTimeout(function () {
+					_this2._setInitialFocus();
+				}, 500);
 			}
 		}
 	}, {

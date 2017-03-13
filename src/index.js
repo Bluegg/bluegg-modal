@@ -52,6 +52,10 @@ class Modal {
 			() => this._hideModal(this.modal),
 		false);
 
+		OVERLAY.addEventListener('click',
+			() => this._hideModal(this.modal),
+		false);
+
 		if (this.cancelBtn !== undefined) {
 			this.cancelBtn.addEventListener('click',
 				() => this._cancelBtnEnter(this.modal, event),
@@ -154,7 +158,9 @@ class Modal {
 			// save current focus
 			lastFocus = document.activeElement;
 
-			this._setInitialFocus();
+			window.setTimeout( () => {
+				this._setInitialFocus();
+		  }, 500);
 
 		}
 	}
